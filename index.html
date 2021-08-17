@@ -20,7 +20,7 @@
       min-height: 100vh;
     }
     
-    header {
+    .header {
       background-color: DarkBlue;
       padding: 5px;
       text-align: center;
@@ -50,24 +50,24 @@
       background-color: grey;
     }
     
-    column {
+    .column {
       float: left;
       padding: 10px;
     }
     
-    column left {
+    .column left {
       width: 25%;
     }
     
-    column middle {
+    .column middle {
       width: 50%;
     }
     
-    column right {
+    .column right {
       width: 25%;
     }
     
-    row:after {
+    .row:after {
       content: "";
       display: table;
       clear: both;
@@ -94,28 +94,28 @@
     <li><a class="active" href="#iron man">Black widow</a></li>
     <li><a class="active" href="#iron man">Hulk/Bruce Banner</a></li>
   </ul>
-  <header>
+  <div class="header">
     <h1 style="color: red; font-size: 500%">MARVEL: The Avengers</h1>
-  </header>
+  </div>
   
-  <row>
-    <column left style="background-color: white;">
+  <div class="row">
+    <div class="column left" style="background-color: white;">
       <h3>hello</h3>
       <p>t</p>
                                          
-    </column left>
+    </div>
     
-    <column middle>
+    <div class="column middle">
       <h3>fellow</h3>
       <p>why</p>
-    </column middle>
+    </div>
     
-    <column right style="background-color: white; padding; 10px;">
+    <div class="column right" style="background-color: white; padding; 10px;">
       <h3>there</h3>
       <p>great</p>
-    </column right>
+    </div>
     
-  </row>
+  </div>
     
   <footer>
     <p>footervfvfsv</p>
