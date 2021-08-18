@@ -103,7 +103,7 @@
     }
     
     secondnav li.dropdown {
-      display: inline-block;
+      display: inline;
     }
     
     secondnav li a:hover, .dropdown:hover .dropbtn {
@@ -120,22 +120,24 @@
     }
     
     .dropdown-content a {
-  color: black;
-  padding: 8px 12px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
- .dropdown-content a:hover {background-color: grey;}
+      color: black;
+      padding: 8px 12px;
+      text-decoration: none;
+      display: block;
+      right: 0;
+      text-align: center;
+    }
+    .dropdown-content a:hover {
+      background-color: grey;
+    }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
     
     secondnav li a:hover:not(.active) {
       background-color: blue;
       color: white;
-      
     }
     
     .footer {
