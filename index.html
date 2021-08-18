@@ -26,7 +26,7 @@
       text-align: center;
     }
     
-    ul {
+    nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -34,11 +34,11 @@
       background-color: black; 
     }
     
-    li {
+    nav li {
       float: right;
     }
     
-    li a {
+    nav li a {
       display: block;
       color: white;
       text-align: center;
@@ -46,7 +46,7 @@
       text-decoration: none;
     }
     
-    li a:hover {
+    nav li a:hover {
       background-color: grey;
     }
     
@@ -88,8 +88,6 @@
       margin: 0;
       padding: 0;
       width: 200px;
-      border-style: solid;
-      border-color: black;
       background-color: WhiteSmoke;
     }
 
@@ -102,7 +100,6 @@
 
     li2 {
       text-align: center;
-
     }
 
     li2 a:hover:not(.active) {
@@ -124,14 +121,16 @@
   
 <body>
   <body style="background-color: blue;">
-  <ul>
-    <li><a class="active" href="#captain america">captain america</a></li>
-    <li><a class="active" href="#iron man">iron man</a></li>
-    <li><a class="active" href="#iron man">Thor</a></li>
-    <li><a class="active" href="#iron man">Hawkeye</a></li>
-    <li><a class="active" href="#iron man">Black widow</a></li>
-    <li><a class="active" href="#iron man">Hulk/Bruce Banner</a></li>
-  </ul>
+  <nav>
+    <ul>
+      <li><a class="active" href="#captain america">captain america</a></li>
+      <li><a class="active" href="#iron man">iron man</a></li>
+      <li><a class="active" href="#iron man">Thor</a></li>
+      <li><a class="active" href="#iron man">Hawkeye</a></li>
+      <li><a class="active" href="#iron man">Black widow</a></li>
+      <li><a class="active" href="#iron man">Hulk/Bruce Banner</a></li>
+    </ul>
+  </nav>
   <div class="header">
     <h1 style="color: red; font-size: 500%">MARVEL: The Avengers</h1>
   </div>
