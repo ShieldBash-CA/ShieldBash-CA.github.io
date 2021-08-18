@@ -90,7 +90,7 @@
       background-color: WhiteSmoke;
     }
 
-    secondnav li a {
+    secondnav li a, .dropbtn {
       display: block;
       color: grey;
       padding: 8px 16px;
@@ -100,7 +100,37 @@
     secondnav li {
       text-align: center;
     }
+    
+    secondnav li.dropdown {
+      display: inline-block;
+    }
+    
+    secondnav li a:hover, .dropdown:hover .dropbtn {
+      background-color: blue;
+    }
+    
+    .dropdown content {
+      display: none;
+      position: absolute;
+      background: white;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+ .dropdown-content a:hover {background-color: grey;}
 
+.dropdown:hover .dropdown-content {
+  display: block;
+    }
+    
     secondnav li a:hover:not(.active) {
       background-color: blue;
       color: white;
@@ -155,7 +185,13 @@
         <h3>Movies</h3>
         <secondnav>
         <ul>
-          <li><a href="#home">Captain America</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="Captain America">
+              <div class="dropdown-content">
+                <a href="#">Captain America: The first avenger</a>
+                <a href="#">Captain America: The first avenger</a>
+                <a href="#">Captain America: The first avenger</a>
+              </div>
           <li><a href="#news">Iron Man</a></li>
           <li><a href="#contact">Thor</a></li>
           <li><a href="#about">Hawkeye</a></li>
