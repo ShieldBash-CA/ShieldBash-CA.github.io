@@ -176,6 +176,12 @@
       position: sticky;
       top: 100%;
     }
+	  
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
         
   </style>
 </head>
@@ -202,6 +208,7 @@
     <div class="column left">
       <div class="card">
 	<h3>Other great characters in the MCU</h3>
+	<div class="clearfix">
 	<ul> 
 	  <li>Nick fury<img src="https://vignette.wikia.nocookie.net/marvelmovies/images/6/6a/AoU_Nick_Fury_portal.png/revision/latest?cb=20150508105628.jpg"></li>
        	  <li style="float: right">falcon<img src="https://images.nintendolife.com/ee3aef79ae8d7/falcon-mcu.large.jpg"></li>
@@ -216,6 +223,7 @@
 	  <li>luis<img src="om/filter:centercrop/quill/5/8/3/4/0/c/58340c8482915df63e8e0611f02d340560c02f55.jpg?w=185&h=185.jpg"></li>
 	  <li style="float: right">Baron zemo<img src="https://img1.looper.com/img/gallery/marvel-has-finally-released-the-full-zemo-dance-scene/intro-1617923932.jpg"></li>
         </ul>
+	</div>
       </div>
     </div>
     
