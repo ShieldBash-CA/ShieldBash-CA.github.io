@@ -123,9 +123,25 @@
       max-width: 100px;
       max-height: 150px;
     }
-	  
-
     
+    . btn-group button {
+      background-color: green;
+      border: 2px solid black
+      color: white;
+      padding: 10px 24px;
+      cursor: pointer;
+      width: 100%;
+      display: block;
+    }
+	
+    .btn-group button:not(:last-child) {
+  border-bottom: none;
+}
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}	  
+	  
     .footer {
       background-color: black;
       padding: 10px;
@@ -212,7 +228,10 @@
     <div class="column right">
       <div class="card" style="background-color: grey">
         <h2 style="text-align: center;">Movies</h2>
-           
+        <div class="btn-group">
+	  <button>apple</button>
+	  <button>samsung</button>
+	</div>
       </div> <!--for card-->	
       <div class="card" style="background-color: grey;">
         <h3>extra movies</h3>
