@@ -138,6 +138,10 @@
 .btn-group button:hover {
   background-color: #3e8e41;
 }	  
+	 
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
 	  
     .dropdown {
       position: relative;
@@ -254,7 +258,7 @@
         <div class="btn-group">
 	  <div class="dropdown">
   	    <button class="button">Iron man</button>
-  	    <div class="dropdown-content" style="left:0;">
+  	    <div class="dropdown-content">
     	      <a href="#">iron man 1</a>
     	      <a href="#">iron man 2</a>
     	      <a href="#">iron man 3</a>
@@ -264,7 +268,7 @@
         <div class="btn-group">
 	  <div class="dropdown">
   	    <button class="button">Captain America</button>
-  	    <div class="dropdown-content" style="left:0;">
+  	    <div class="dropdown-content">
     	      <a href="#">captain america: the first avenger</a>
     	      <a href="#">captain america: the winter soldier</a>
     	      <a href="#">captain america: civil war</a>
@@ -274,7 +278,7 @@
 	<div class="btn-group">
 	  <div class="dropdown">
   	    <button class="button">Thor</button>
-  	    <div class="dropdown-content" style="left:0;">
+  	    <div class="dropdown-content">
     	      <a href="#">thor</a>
     	      <a href="#">thor 2</a>
     	      <a href="#">thor: ragnarok</a>
@@ -284,7 +288,7 @@
 	<div class="btn-group">
 	  <div class="dropdown">
   	    <button class="button">Hawkeye</button>
-  	    <div class="dropdown-content" style="left:0;">
+  	    <div class="dropdown-content">
     	      <a href="#">no stand alone movies</a>
   	    </div>
           </div>
@@ -292,7 +296,7 @@
 	<div class="btn-group">
 	  <div class="dropdown">
   	    <button class="button">Black Widow</button>
-  	    <div class="dropdown-content" style="left:0;">
+  	    <div class="dropdown-content">
     	      <a href="#">black widow</a>
   	    </div>
           </div>
@@ -300,7 +304,7 @@
 	<div class="btn-group">
 	  <div class="dropdown">
   	    <button class="button">Hulk/Bruce Banner</button>
-  	    <div class="dropdown-content" style="left:0;">
+  	    <div class="dropdown-content">
     	      <a href="#">No stand alone movies</a>
   	    </div>
           </div>
