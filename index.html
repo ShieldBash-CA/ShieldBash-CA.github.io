@@ -69,6 +69,32 @@
     i {
       padding-right: 5px;
     }
+	  
+    <!-- new code-->
+    .nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  <!-- new code-->
     
     .column {
       float: left;
@@ -183,7 +209,7 @@
   
 <body>
   <body style="background-color: blue;">
-  <nav>
+  <div class="nav">
     <ul>    
       <li><a href="#captain america"><i class="fas fa-star" style="color: white"></i>Captain America</a></li>
       <li><a href="#iron man"><i class="far fa-circle" style="color: red"></i>Iron Man</a></li>
