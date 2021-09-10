@@ -209,7 +209,7 @@
   
 <body>
   <body style="background-color: blue;">
-  <div class="nav">
+  <div class="nav" id="myTopnav">
     <ul>    
       <li><a href="#captain america"><i class="fas fa-star" style="color: white"></i>Captain America</a></li>
       <li><a href="#iron man"><i class="far fa-circle" style="color: red"></i>Iron Man</a></li>
@@ -217,7 +217,20 @@
       <li><a href="#hawkeye"><i class="fas fa-long-arrow-alt-right" style="color: purple"></i>Hawkeye</a></li>
       <li><a href="#black widow"><i class="fas fa-bolt" style="color: blue"></i>Black Widow</a></li>
       <li><a href="#hulk"><i class="fas fa-fist-raised" style="color: green"></i>Hulk/Bruce Banner</a></li>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
     </ul>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
   </div>
   <div class="header">
     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/2b618b80692143.5ce829e375166.jpg" style="float:right">
